@@ -1,0 +1,45 @@
+body {
+  margin: 0 335px;
+
+  @media screen and (max-width: 1850px) {
+    margin: 0 250px;
+  }
+  @media screen and (max-width: 1700px) {
+    margin: 0 150px;
+  }
+  @media screen and (max-width: 1300px) {
+    margin: 0 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 0 15px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border-style: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+:root {
+  --smpr: 750px;
+}

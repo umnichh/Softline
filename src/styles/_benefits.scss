@@ -1,0 +1,235 @@
+.benefits {
+  margin-top: 100px;
+  min-width: 290px;
+
+  @media screen and (max-width: 1000px) {
+    gap: 10px;
+  }
+
+  @media screen and (max-width: 720px) {
+    margin-top: 50px;
+  }
+
+  &__container {
+    margin: 0 70px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
+
+    @media screen and (max-width: 720px) {
+      margin: 0;
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 78px 75px 80px;
+
+    @media screen and (max-width: 720px) {
+      padding: 24px 5px;
+    }
+  }
+
+  &__title {
+    color: rgb(68, 68, 68);
+    font-family: Proxima Nova Cn Lt;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 50px;
+    white-space: nowrap;
+
+    @media screen and (max-width: 1000px) {
+      color: rgb(68, 68, 68);
+      font-family: Proxima Nova Cn Lt;
+      font-size: 42px;
+      font-weight: 600;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 720px) {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__br {
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: start;
+
+    &--last {
+      grid-column: 1 / 2 span;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1000px) {
+      display: grid;
+      grid-template: repeat(2, 1fr) auto / repeat(2, 1fr);
+      row-gap: 25px;
+      justify-content: start;
+      align-items: start;
+      column-gap: 10px;
+
+      &--big-gap {
+        column-gap: 25px;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 178px;
+
+    @media screen and (max-width: 1350px) {
+      width: 140px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      &--last {
+        grid-column: 1 / 2 span;
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 720px) {
+      width: 120px;
+      gap: 10px;
+
+      &--big-gap {
+        width: 80px;
+      }
+      &--last {
+        width: 100%;
+      }
+    }
+  }
+
+  &__mobile-br {
+    display: none;
+    @media screen and (max-width: 720px) {
+      display: inline;
+    }
+  }
+
+  &__desktop-br {
+    display: inline;
+    @media screen and (max-width: 720px) {
+      display: none;
+    }
+  }
+
+  &__image-container {
+    position: relative;
+  }
+
+  &__background {
+    height: 110px;
+    width: 110px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 100%;
+
+    @media screen and (max-width: 720px) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 720px) {
+      height: 50%;
+    }
+  }
+
+  &__text {
+    color: rgb(68, 68, 68);
+    font-family: Proxima Nova Cn Lt;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  &__line {
+    border: 1px solid rgb(0, 0, 0);
+    opacity: 0.1;
+    width: calc(100% - 60px);
+    height: 0;
+    left: 30px;
+    top: 421px;
+    margin: 0 30px;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 78px 75px 80px;
+    gap: 50px;
+
+    @media screen and (max-width: 720px) {
+      padding: 24px 5px 0px 5px;
+      gap: 25px;
+    }
+  }
+
+  &__second-title {
+    color: rgb(68, 68, 68);
+    font-family: Proxima Nova Cn Lt;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    @media screen and (max-width: 1000px) {
+      color: rgb(68, 68, 68);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-family: Proxima Nova Cn Lt;
+      font-size: 22px;
+    }
+  }
+
+  &__red {
+    color: rgb(176, 23, 54);
+    font-family: Proxima Nova Cn Lt;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    @media screen and (max-width: 1000px) {
+      color: rgb(176, 23, 54);
+      font-family: Proxima Nova Cn Lt;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: 0%;
+      text-align: center;
+      height: 26px;
+    }
+  }
+}

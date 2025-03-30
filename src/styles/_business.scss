@@ -1,0 +1,184 @@
+.business {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 55px;
+
+  @media screen and (max-width: 700px) {
+    gap: 15px;
+  }
+
+  &__title {
+    color: rgb(68, 68, 68);
+    font-family: Proxima Nova Cn Lt;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    @media screen and (max-width: 700px) {
+      font-size: 28px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template: repeat(3, 260px) / repeat(2, 615px);
+    gap: 20px;
+
+    @media screen and (max-width: 1300px) {
+      grid-template: repeat(3, auto) / repeat(2, auto);
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 1170px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+    }
+  }
+
+  &__card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 615px;
+
+    @media screen and (max-width: 1170px) {
+      min-width: 280px;
+      height: 60px;
+    }
+
+    @media screen and (max-width: 370px) {
+      width: 280px;
+    }
+
+    &--active {
+      height: 240px;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    top: 180px;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+
+    &--active {
+      transform: translateY(-180px);
+    }
+
+    @media screen and (max-width: 1170px) {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+      height: 100%;
+
+      &--touch-active {
+        height: 240px;
+      }
+
+      &--active {
+        height: 240px;
+      }
+    }
+  }
+
+  &__background {
+    opacity: 0.6;
+    width: 100%;
+    background: rgb(45, 54, 83);
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__card-title {
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova Cn Lt;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    left: 20px;
+    top: 28px;
+
+    @media screen and (max-width: 1170px) {
+      color: rgb(255, 255, 255);
+      font-family: Proxima Nova Cn Lt;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: left;
+      top: 21px;
+      left: 0;
+      width: 100%;
+      padding: 0 5px 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__arrow-down {
+    display: none;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    @media screen and (max-width: 1170px) {
+      display: block;
+      position: relative;
+      width: 36px;
+      height: 36px;
+      transition: all 0.3s ease-in-out;
+
+      &--active {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &__card-text {
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova Cn Lt;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    top: 96px;
+    left: 20px;
+
+    @media screen and (max-width: 1170px) {
+      color: rgb(255, 255, 255);
+      font-family: Proxima Nova Cn Lt;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: 0%;
+      text-align: left;
+      top: 60px;
+      left: 0;
+      padding: 0 10px;
+    }
+  }
+}

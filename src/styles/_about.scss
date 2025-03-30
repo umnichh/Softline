@@ -1,0 +1,94 @@
+.about {
+  margin: 0 66px 0 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 369px;
+
+  @media screen and (max-width: 1700px) {
+    margin: 0 40px;
+    gap: 26px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin: 0 30px;
+    gap: 26px;
+  }
+
+  @media screen and (max-width: 900px) {
+    margin: 0 20px;
+    gap: 26px;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 0 20px;
+    gap: 16px;
+  }
+
+  @media screen and (max-width: 460px) {
+    gap: 10px;
+
+    margin: 27px 5px 0 5px;
+    align-items: start;
+    height: min-content;
+  }
+
+  &__br {
+    display: none;
+    @media screen and (max-width: 460px) {
+      display: inline;
+    }
+  }
+
+  &__title {
+    color: rgb(176, 23, 54);
+    font-family: Proxima Nova Cn Lt;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    height: 67px;
+
+    @media screen and (max-width: 800px) {
+      font-size: 50px;
+    }
+
+    @media screen and (max-width: 460px) {
+      color: rgb(176, 23, 54);
+      font-family: Proxima Nova Cn Lt;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: 0%;
+      height: 34px;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    color: rgb(68, 68, 68);
+    font-family: Proxima Nova Cn Lt;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    @media screen and (max-width: 800px) {
+      font-size: 26px;
+    }
+
+    @media screen and (max-width: 460px) {
+      color: rgb(68, 68, 68);
+      font-family: Proxima Nova Cn Lt;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 120%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+}

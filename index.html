@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles/style.scss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="/src/assets/images/logo.png" alt="logo" />
+      <nav class="header__nav">
+        <a class="header__link" href="#">Облачные решения</a>
+        <a class="header__link" href="#">Кибербезопасность</a>
+        <a class="header__link" href="#">Импортозамещение</a>
+        <a class="header__link" href="#">Цифровая трансформация</a>
+      </nav>
+    </header>
+    <main>
+      <section class="about">
+        <h1 class="about__title">Softline</h1>
+        <p class="about__text">
+          Ведущий поставщик IT-решений <br class="about__br" />
+          и сервисов.* Мы предлагаем комплексные <br class="about__br" />
+          IT-решения, облака, программное и аппаратное обеспечение, решения по
+          цифровой трансформации и кибербезопасности, а также широкий спектр
+          IT-услуг.
+        </p>
+      </section>
+      <section class="highlight">
+        <p class="highlight__text">
+          <span class="highlight__red">
+            <span class="highlight__arrow">></span>
+            <span>30 лет</span>
+          </span>
+          на IT рынке
+        </p>
+        <p class="highlight__text">
+          <span class="highlight__red">4600</span>
+          <span>сотрудников в России</span>
+        </p>
+        <p class="highlight__text">
+          <span class="highlight__red">25</span>
+          <span>городов в России</span>
+        </p>
+        <p class="highlight__text">
+          <span class="highlight__red">
+            2000
+            <span class="highlight__plus">+</span>
+          </span>
+          <span>разработчиков</span>
+        </p>
+        <p class="highlight__text highlight__text--last-item">
+          <span class="highlight__red">
+            3000
+            <span class="highlight__plus">+</span>
+          </span>
+          <span>
+            сотрудников ежегодно <br />
+            проходят оценку и обучение
+          </span>
+        </p>
+      </section>
+      <section class="map">
+        <header class="map__header">
+          <div class="map__dialog">
+            <button class="map__open-dialog">
+              Офисы Softline
+              <img
+                class="map__arrow-down"
+                src="/src/assets/images/arrow-down.png"
+                alt="arrow-down"
+              />
+            </button>
+            <div class="map__dialog-container">
+              <ul class="map__list">
+                <button class="map__list-item map__list-item--bold">
+                  Москва
+                  <img
+                    class="map__small-arrow"
+                    src="/src/assets/images/small-arrow.png"
+                    alt="small-arrow"
+                  />
+                </button>
+              </ul>
+              <ul class="map__list">
+                <button class="map__list-item map__list-item--bold">
+                  Центр
+                  <img
+                    class="map__small-arrow"
+                    src="/src/assets/images/small-arrow.png"
+                    alt="small-arrow"
+                  />
+                </button>
+                <ul class="map__list-container" data-id="1">
+                  <li class="map__list-item">Воронеж</li>
+                  <li class="map__list-item">Ярославль</li>
+                  <li class="map__list-item">Белгород</li>
+                </ul>
+              </ul>
+              <ul class="map__list">
+                <button class="map__list-item map__list-item--bold">
+                  Северо-Запад
+                  <img
+                    class="map__small-arrow"
+                    src="/src/assets/images/small-arrow.png"
+                    alt="small-arrow"
+                  />
+                </button>
+                <ul class="map__list-container" data-id="2">
+                  <li class="map__list-item">Санкт-Петербург</li>
+                  <li class="map__list-item">Калининград</li>
+                </ul>
+              </ul>
+              <ul class="map__list">
+                <button class="map__list-item map__list-item--bold">
+                  Юг
+                  <img
+                    class="map__small-arrow"
+                    src="/src/assets/images/small-arrow.png"
+                    alt="small-arrow"
+                  />
+                </button>
+                <ul class="map__list-container" data-id="3">
+                  <li class="map__list-item">Ростов-на-Дону</li>
+                  <li class="map__list-item">Краснодар</li>
+                  <li class="map__list-item">Волгоград</li>
+                </ul>
+              </ul>
+              <ul class="map__list">
+                <button class="map__list-item map__list-item--bold">
+                  Волга
+                  <img
+                    class="map__small-arrow"
+                    src="/src/assets/images/small-arrow.png"
+                    alt="small-arrow"
+                  />
+                </button>
+                <ul class="map__list-container" data-id="4">
+                  <li class="map__list-item">Казань</li>
+                  <li class="map__list-item">Самара</li>
+                  <li class="map__list-item">Уфа</li>
+                  <li class="map__list-item">Оренбург</li>
+                  <li class="map__list-item">Нижний Новгород</li>
+                </ul>
+              </ul>
+              <ul class="map__list">
+                <button class="map__list-item map__list-item--bold">
+                  Урал
+                  <img
+                    class="map__small-arrow"
+                    src="/src/assets/images/small-arrow.png"
+                    alt="small-arrow"
+                  />
+                </button>
+                <ul class="map__list-container" data-id="5">
+                  <li class="map__list-item">Екатеринбург</li>
+                  <li class="map__list-item">Челябинск</li>
+                  <li class="map__list-item">Пермь</li>
+                  <li class="map__list-item">Сургут</li>
+                  <li class="map__list-item">Тюмень</li>
+                  <li class="map__list-item">Ижевск</li>
+                </ul>
+              </ul>
+              <ul class="map__list">
+                <button class="map__list-item map__list-item--bold">
+                  Сибирь
+                  <img
+                    class="map__small-arrow"
+                    src="/src/assets/images/small-arrow.png"
+                    alt="small-arrow"
+                  />
+                </button>
+                <ul class="map__list-container" data-id="6">
+                  <li class="map__list-item">Новосибирск</li>
+                  <li class="map__list-item">Томск</li>
+                  <li class="map__list-item">Омск</li>
+                  <li class="map__list-item">Красноярск</li>
+                  <li class="map__list-item">Иркутск</li>
+                </ul>
+              </ul>
+              <ul class="map__list">
+                <button
+                  class="map__list-item map__list-item--bold map__list-item--wrap"
+                >
+                  Дальний Восток
+                  <img
+                    class="map__small-arrow"
+                    src="/src/assets/images/small-arrow.png"
+                    alt="small-arrow"
+                  />
+                </button>
+                <ul class="map__list-container" data-id="7">
+                  <li class="map__list-item">Хабаровск</li>
+                  <li class="map__list-item">Владивосток</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <nav class="map__nav">
+            <button class="map__button map__button--active" data-map="all">
+              Все
+              <div class="map__underline"></div>
+            </button>
+            <button class="map__button" data-map="moscow">Москва</button>
+            <button class="map__button" data-map="center">Центр</button>
+            <button class="map__button" data-map="north-west">
+              Северо-Запад
+            </button>
+            <button class="map__button" data-map="south">Юг</button>
+            <button class="map__button" data-map="volga">Волга</button>
+            <button class="map__button" data-map="ural">Урал</button>
+            <button class="map__button" data-map="siberia">Сибирь</button>
+            <button class="map__button" data-map="east">Дальний восток</button>
+          </nav>
+        </header>
+        <div class="map__container">
+          <img class="map__img" src="/src/assets/images/map.png" alt="" />
+        </div>
+      </section>
+      <section class="mission">
+        <img
+          class="mission__left-pattern"
+          src="/src/assets/images/mission-left pattern.png"
+          alt="mission-right"
+        />
+        <img
+          class="mission__right-pattern"
+          src="/src/assets/images/mission-right pattern.png"
+          alt="mission-left"
+        />
+        <div class="mission__background"></div>
+        <div class="mission__content">
+          <h2 class="mission__title">Миссия Softline</h2>
+          <p class="mission__text">
+            Мы помогаем организациям трансформироваться, работать эффективно и
+            безопасно <br />
+            в условиях цифровой экономики.
+          </p>
+        </div>
+      </section>
+      <section class="business">
+        <h3 class="business__title">Направления бизнеса</h3>
+        <div class="business__grid">
+          <div class="business__card">
+            <img
+              class="business__img"
+              src="/src/assets/images/img1.png"
+              alt="Решения Софтлайн"
+            />
+            <div class="business__wrapper">
+              <div class="business__background"></div>
+              <p class="business__card-title">
+                Решения Softline
+                <img
+                  class="business__arrow-down"
+                  src="/src/assets/images/business-arrow-down.png"
+                  alt="arrow-down"
+                />
+              </p>
+              <p class="business__card-text">
+                ГК Softline предлагает клиентам собственную линейку оборудования
+                (ПК, серверы, торговое оборудование и проч.), разработку
+                программных продуктов, облачных решений, решений в области
+                информационной безопасности.
+              </p>
+            </div>
+          </div>
+          <div class="business__card">
+            <img
+              class="business__img"
+              src="/src/assets/images/img2.png"
+              alt="Решения Софтлайн"
+            />
+            <div class="business__wrapper">
+              <div class="business__background"></div>
+              <p class="business__card-title">
+                Кибербезопасность
+                <img
+                  class="business__arrow-down"
+                  src="/src/assets/images/business-arrow-down.png"
+                  alt="arrow-down"
+                />
+              </p>
+              <p class="business__card-text">
+                Softline обладает всеми необходимыми государственными лицензиями
+                для организации проектов по информационной безопасности и
+                аттестации.
+              </p>
+            </div>
+          </div>
+          <div class="business__card">
+            <img
+              class="business__img"
+              src="/src/assets/images/img3.png"
+              alt="Решения Софтлайн"
+            />
+            <div class="business__wrapper">
+              <div class="business__background"></div>
+              <p class="business__card-title">
+                Импортозамещение
+                <img
+                  class="business__arrow-down"
+                  src="/src/assets/images/business-arrow-down.png"
+                  alt="arrow-down"
+                />
+              </p>
+              <p class="business__card-text">
+                ГК Softline обладает широчайшим портфелем решений и услуг для
+                импортозамещения, включая ПО и оборудование собственного
+                производства.
+              </p>
+            </div>
+          </div>
+          <div class="business__card">
+            <img
+              class="business__img"
+              src="/src/assets/images/img4.png"
+              alt="Решения Софтлайн"
+            />
+            <div class="business__wrapper">
+              <div class="business__background"></div>
+              <p class="business__card-title">
+                Облачные решения
+                <img
+                  class="business__arrow-down"
+                  src="/src/assets/images/business-arrow-down.png"
+                  alt="arrow-down"
+                />
+              </p>
+              <p class="business__card-text">
+                Softline использует современные облачные решения как российских,
+                так и международных вендоров для масштабирования бизнеса своих
+                клиентов. Подписки, услуги, трансформация.
+              </p>
+            </div>
+          </div>
+          <div class="business__card">
+            <img
+              class="business__img"
+              src="/src/assets/images/img5.png"
+              alt="Решения Софтлайн"
+            />
+            <div class="business__wrapper">
+              <div class="business__background"></div>
+              <p class="business__card-title">
+                Цифровая трансформация и разработка ПО
+                <img
+                  class="business__arrow-down"
+                  src="/src/assets/images/business-arrow-down.png"
+                  alt="arrow-down"
+                />
+              </p>
+              <p class="business__card-text">
+                Softline использует современные технологи и новые возможности
+                для увеличения производительности бизнеса заказчика. В штате ГК
+                Softline - 2000+ разработчиков, которые трансформируют ПО под
+                нужды конкретного предприятия.
+              </p>
+            </div>
+          </div>
+          <div class="business__card">
+            <img
+              class="business__img"
+              src="/src/assets/images/img6.png"
+              alt="Решения Софтлайн"
+            />
+            <div class="business__wrapper">
+              <div class="business__background"></div>
+              <p class="business__card-title">
+                Техническая поддержка Softline
+                <img
+                  class="business__arrow-down"
+                  src="/src/assets/images/business-arrow-down.png"
+                  alt="arrow-down"
+                />
+              </p>
+              <p class="business__card-text">
+                200+ инженеров, 24 часа в сутки, 7 дней в неделю, 12 месяцев в
+                году, сервисное партнерство с 30+ мировыми производителями.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="benefits__container">
+          <div class="benefits__top">
+            <h4 class="benefits__title">Компенсационный пакет</h4>
+            <div class="benefits__cards">
+              <div class="benefits__card">
+                <div class="benefits__image-container">
+                  <div class="benefits__background"></div>
+                  <img
+                    class="benefits__image"
+                    src="/src/assets/images/health.png"
+                    alt="dms"
+                  />
+                </div>
+                <p class="benefits__text">ДМС</p>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__image-container">
+                  <div class="benefits__background"></div>
+                  <img
+                    class="benefits__image"
+                    src="/src/assets/images/cake.png"
+                    alt="birthday weekend"
+                  />
+                </div>
+                <p class="benefits__text">
+                  Выходной <br />
+                  в день рождения
+                </p>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__image-container">
+                  <div class="benefits__background"></div>
+                  <img
+                    class="benefits__image"
+                    src="/src/assets/images/phone.png"
+                    alt="mobile-network"
+                  />
+                </div>
+                <p class="benefits__text">
+                  Корпоративная <br />
+                  мобильная связь
+                </p>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__image-container">
+                  <div class="benefits__background"></div>
+                  <img
+                    class="benefits__image"
+                    src="/src/assets/images/dumbell.png"
+                    alt="sales"
+                  />
+                </div>
+                <p class="benefits__text">
+                  Корпоративные <br class="benefits__mobile-br" />
+                  скидки <br class="benefits__desktop-br" />
+                  на спорт
+                </p>
+              </div>
+              <div class="benefits__card benefits__card--last">
+                <div class="benefits__image-container">
+                  <div class="benefits__background"></div>
+                  <img
+                    class="benefits__image"
+                    src="/src/assets/images/handshake.png"
+                    alt="LTI"
+                  />
+                </div>
+                <p class="benefits__text">LTI</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__line"></div>
+          <div class="benefits__bottom">
+            <h5 class="benefits__second-title">
+              <span
+                >Программа дополнительной мотивации<br class="benefits__br"
+              /></span>
+              <span class="benefits__red">доплата 12% от суммы </span>
+            </h5>
+            <div class="benefits__cards benefits__cards--big-gap">
+              <div class="benefits__card benefits__card--big-gap">
+                <div class="benefits__image-container">
+                  <div class="benefits__background"></div>
+                  <img
+                    class="benefits__image"
+                    src="/src/assets/images/printer.png"
+                    alt="orgtech"
+                  />
+                </div>
+                <p class="benefits__text">Оргтехники</p>
+              </div>
+              <div class="benefits__card benefits__card--big-gap">
+                <div class="benefits__image-container">
+                  <div class="benefits__background"></div>
+                  <img
+                    class="benefits__image"
+                    src="/src/assets/images/health.png"
+                    alt="dms"
+                  />
+                </div>
+                <p class="benefits__text">ДМС</p>
+              </div>
+              <div
+                class="benefits__card benefits__card--big-gap benefits__card--last"
+              >
+                <div class="benefits__image-container">
+                  <div class="benefits__background"></div>
+                  <img
+                    class="benefits__image"
+                    src="/src/assets/images/hourse.png"
+                    alt="mortgage"
+                  />
+                </div>
+                <p class="benefits__text">Ипотеки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider">
+        <header class="slider__header">
+          <h6 class="slider__title">Корпоративная жизнь</h6>
+          <nav class="slider__nav">
+            <button class="slider__button-left">
+              <img
+                class="slider__arrow-left"
+                src="/src/assets/images/arrow-left.png"
+                alt="arrow-left"
+              />
+            </button>
+            <button class="slider__button-right">
+              <img
+                class="slider__arrow-right"
+                src="/src/assets/images/arrow-right.png"
+                alt="arrow-right"
+              />
+            </button>
+          </nav>
+        </header>
+        <div class="slider__content"></div>
+        <div class="slider__indicators">
+          <button class="slider__indicator"></button>
+          <button class="slider__indicator"></button>
+          <button class="slider__indicator"></button>
+          <button class="slider__indicator"></button>
+          <button class="slider__indicator"></button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/scripts/map.js"></script>
+    <script type="module" src="/src/scripts/business.js"></script>
+    <script type="module" src="/src/scripts/slider.js"></script>
+  </body>
+</html>

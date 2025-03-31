@@ -74,8 +74,10 @@ function handleSwipe() {
 
   if (touchStartX - touchEndX > swipeThreshold) {
     goToNextSlide();
+    updateIndicators();
   } else if (touchEndX - touchStartX > swipeThreshold) {
     goToPrevSlide();
+    updateIndicators();
   }
 }
 
